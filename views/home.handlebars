@@ -1,0 +1,14 @@
+<h1>Project Index</h1>
+
+{{#if user}}
+	<h2>Welcome, {{user.username}}!</h2>
+	<a href="/your_events">See your events</a><br>
+	<a href="/logout">(Log out)</a>
+{{else}}
+	<a href="/login">Log in</a>
+{{/if}}
+
+
+<p>How many followers do you have on GitHub? </p>
+<a href="/get_data">Tell us!</a>
+

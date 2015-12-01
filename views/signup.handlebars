@@ -1,0 +1,18 @@
+<h1>Sign Up</h1>
+<form action="/signup" method="post"><br>
+	<label>Username: </label>
+	<input type="text" name="username"><br>
+	<label>Password: </label>
+	<input type="password" name="password"><br>
+	<label>Confirm Password: </label>
+	<input type="password" name="confirm"><br>
+	<input type="submit" value="Sign up">
+</form>
+
+{{#if message}}
+	<p>{{message.error}}</p>
+{{/if}}
+
+<hr>
+
+<a href="/auth/github">Sign up with your GitHub Account</a>
